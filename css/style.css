@@ -1923,11 +1923,11 @@ p.contact_success_box{
 
 
 
-#navbar-collapse-02 li.selected a{
+#navbar-collapse-02 li.selected a:not(.btn){
     color: var(--zz-blue);
 }
 
-#navbar-collapse-02 .current a {
+#navbar-collapse-02 .current a:not(.btn) {
     color: var(--zz-blue);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -1935,41 +1935,15 @@ p.contact_success_box{
     transition: all 0.5s ease;
 }
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover{
+.navbar-default .navbar-nav > li > a:not(.btn), 
+.navbar-default .navbar-nav > li > a:not(.btn):hover {
+    /* Your existing styles here */
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
-.navbar-default .navbar-nav > li > a.purchase{
-	position:relative;
-	color:#fff;
-	color: var(--zz-blue);
-	border:1px solid var(--zz-blue);
-	margin-left:15px;
-	margin-right:15px;
-	margin-top:14px;
-	padding:0 25px;
-	font-weight:600!important;
-	letter-spacing: 1px;
-	text-transform:none;
-	webkit-border-radius: 5px 5px;
-    -moz-border-radius: 5px 5px;
-    border-radius: 5px 5px;
-}
-
-.navbar-default .navbar-nav > li > a.purchase:hover{
-	color: var(--zz-blue)!important;
-	background-color: transparent;
-	border:1px solid var(--zz-blue);
-}
-
-#navbar-collapse-02 .current a.purchase{
-	color:#fff!important;
-	background-color: var(--zz-blue);
-	border:1px solid var(--zz-blue);
-}
 
 /* ----- 4. Fun Facts ----- */
 .fun-facts-wrapper{

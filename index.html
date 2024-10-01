@@ -19,6 +19,12 @@
     <!-- Font Awesome -->
     <link href="css/fonts.css" rel="stylesheet" />
 
+    <!-- Load AOS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  />
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100"
@@ -88,7 +94,9 @@
               <li><a href="#gallery">Gallery</a></li>
 
 
-              <li><a href="#contact" class="purchase scrool">Contact Us</a></li>
+              <li>
+                <a href="" class="btn btn-outline-danger btn-data-portal">Data Portal</a>
+              </li>
             </ul>
           </div>
           <!--end navbar -->
@@ -158,7 +166,7 @@
     </div>
     <!--end section-grey-->
     <!--begin video-section -->
-    <section id="video" class="section-white medium-padding">
+    <section id="video" class="section-white medium-padding" data-aos="fade-up">
       <!--begin container-->
       <div class="container">
         <!--begin row-->
@@ -203,7 +211,7 @@
     </section>
 
     <!--begin testimonials -->
-    <div class="section-testimonials">
+    <div class="section-testimonials" data-aos="fade-up">
       <!--begin container-->
       <div class="container testimonials-wrapper">
         <!--begin row-->
@@ -242,7 +250,7 @@
 
 
     <!--begin section-grey -->
-    <section id="research" class="section-white">
+    <section id="research" class="section-white" data-aos="fade-up">
       <!--begin container-->
       <div class="container">
         <!--begin row-->
@@ -904,5 +912,13 @@ Download our lastest quarterly report full of performance metrics and children's
     <script src="js/wow.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/plugins.js"></script>
+        <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: true, // Animation happens only once
+          });
+        </script>
   </body>
 </html>
