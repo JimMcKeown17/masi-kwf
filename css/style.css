@@ -2463,3 +2463,27 @@ p.testimonials-text {
 	  transform: scale(1.12);
 	}
   }
+
+
+
+
+.latest-report{
+	background: var(--kwf-red);
+	color: white;
+
+	h2.section-title{
+		color: white !important;
+	}
+	.section-subtitle{
+		color: white !important;
+	}
+	.report-cover{
+		height: 400px;
+		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+		transition: 0.3s ease-in-out;
+	  }
+
+	.report-cover:hover{
+		transform: translateY(-10px);
+	}
+}
