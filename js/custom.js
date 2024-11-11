@@ -57,18 +57,28 @@ $(window).load(function(){
 	/*   SmoothScroll                                             */
 	/* ========================================================== */
 	
-	$(".nav li a, a.scrool").click(function(e){
-		
+	$(".nav li a, a.scrool").click(function(e) {
 		var full_url = this.href;
+		
+		// Check if the link is an external link or does not contain a hash
+		if (full_url.indexOf("#") === -1) {
+			return true;  // Let external links behave normally
+		}
+	
 		var parts = full_url.split("#");
 		var trgt = parts[1];
-		var target_offset = $("#"+trgt).offset();
-		var target_top = target_offset.top;
 		
-		$('html,body').animate({scrollTop:target_top -76}, 1000);
-			return false;
-		
+		// Ensure the target exists before trying to scroll
+		if ($("#" + trgt).length) {
+			var target_offset = $("#" + trgt).offset();
+			var target_top = target_offset.top;
+	
+			$('html,body').animate({scrollTop: target_top - 76}, 1000);
+		}
+	
+		return false;
 	});
+	
 
 
 	/* ========================================================== */

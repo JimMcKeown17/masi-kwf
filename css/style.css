@@ -2321,10 +2321,10 @@ p.testimonials-text {
 		background: url("../images/Siyabonga\ Bishini.JPG")
         no-repeat 50% / cover;
     }
-	&:nth-of-type(7) {
-		background: url("../images/Simone\ Mackenzie.png")
+	/* &:nth-of-type(7) {
+		background: url("../images/Simone\ Mackenzie.jpg")
         no-repeat 50% / cover;
-    }
+    } */
 
     .content {
       font-size: 1.5rem;
